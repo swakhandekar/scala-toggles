@@ -1,3 +1,6 @@
+import repository.FruitsRepository
+
 object Application extends App {
-  println("Hello World!")
+  val fruitsRepository = new FruitsRepository()
+  println(fruitsRepository.get.mkString(", "))
 }
